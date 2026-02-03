@@ -66,7 +66,7 @@ class GetAllTask extends StatelessWidget {
                     }
                   }, icon: Icon(Icons.delete)),
                   IconButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> UpdateTask(model: taskListingModel.tasks[index].toString())));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> UpdateTask(model: taskListingModel.tasks![index])));
                   }, icon: Icon(Icons.edit))
                 ],)
               );
